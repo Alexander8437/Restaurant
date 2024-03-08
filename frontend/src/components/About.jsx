@@ -13,13 +13,11 @@ const About = () => {
               <p>The only thing we're serious about is food.</p>
             </div>
             <p className="mid">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Provident possimus optio adipisci dolores impedit illum iusto
-              perferendis, laudantium quod accusamus consequuntur consectetur,
-              tempore nulla error iure reiciendis dolorem assumenda.
-              Necessitatibus fugit asperiores totam rem esse exercitationem
-              iusto ipsum qui dolore ex, accusantium repellat mollitia
-              repellendus.
+              Prepare your taste buds for a gastronomic journey unlike any
+              other. Our menu boasts a symphony of flavors, expertly crafted by
+              our talented chefs who draw inspiration from both local traditions
+              and global influences. From succulent seafood to tender cuts of
+              meat, every dish is a masterpiece waiting to be savored.
             </p>
             <Link to={"/"}>
               Explore Menu{" "}
@@ -29,7 +27,10 @@ const About = () => {
             </Link>
           </div>
           <div className="banner">
-            <img src="about.png" alt="about" />
+            <img
+              src="https://images.pexels.com/photos/699953/pexels-photo-699953.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="about"
+            />
           </div>
         </div>
       </section>

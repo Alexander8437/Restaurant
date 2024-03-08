@@ -1,18 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&display=swap");
-
 * {
-  font-family: "Oswald", sans-serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   box-sizing: border-box;
   overflow-x: hidden;
   margin: 0;
   padding: 0;
 }
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   display: none;
 }
 
 /********************** HERO SECTION COMPONENT STYLING **************************/
-/**********************************************************************************************************************/
 nav {
   display: flex;
   max-width: 1500px;
@@ -152,50 +149,59 @@ nav svg {
     border-radius: 0;
   }
 }
-/**********************************************************************************************************************/
 
 /********************** HERO SECTION COMPONENT STYLING **************************/
-/**********************************************************************************************************************/
 .heroSection {
   display: flex;
   flex-direction: column;
   min-height: 80vh;
   justify-content: space-between;
   align-items: center;
-  background: url(/background.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right;
   padding: 0 15px;
+  background-color: antiquewhite;
 }
 .heroSection .container {
   display: flex;
-  max-width: 1200px;
-  min-width: 1200px;
+  margin-top: -30px;
 }
-.heroSection .container .banner:first-child {
-  flex: 2;
+.heroSection .container .banner {
   display: flex;
-  flex-wrap: wrap;
-}
-.heroSection .container .banner .largeBox {
+  flex-direction: row;
+  justify-content: space-around;
   width: 100%;
 }
-.heroSection .container .banner .combined_boxes {
+.heroSection .container .banner .imageBox {
   display: flex;
-  width: 100%;
-}
-.heroSection .container .banner .title {
-  font-size: 8.5rem;
-  font-weight: 200;
-}
-.heroSection .container .banner .textAndLogo {
+  justify-content: center;
   width: 50%;
 }
-.heroSection .container .banner .textWithSvg {
+.heroSection .container .banner .imageBox img {
+  height: 400px;
+  width: auto;
+}
+
+.heroSection .container .banner .combined_boxes {
+  display: flex;
+  flex-direction: column;
+  color: #555;
+  width: 50%;
+}
+.heroSection .container .banner .combined_boxes img {
+  position: relative;
+  top: 0;
+  height: 60px;
+}
+.heroSection .container .banner .title {
+  font-size: 4.4rem;
+  font-weight: 200;
+}
+/*.heroSection .container .banner .textWithSvg {
+  display: flex;
+  flex-direction: column;
   position: relative;
 }
 .heroSection .container .banner .textWithSvg img {
+  display: none;
   position: absolute;
   right: 0;
   top: 0;
@@ -218,7 +224,15 @@ nav svg {
 }
 .heroSection .container .banner:last-child {
   flex: 1;
+} */
+@media (min-width: 1280px) {
+  .heroSection .container {
+    width: 100%;
+    min-width: fit-content;
+    padding: 30px 20px;
+  }
 }
+
 @media (max-width: 1280px) {
   .heroSection .container {
     width: 100%;
@@ -228,7 +242,7 @@ nav svg {
 }
 @media (max-width: 1072px) {
   .heroSection .container .banner .title {
-    font-size: 6.5rem;
+    font-size: 4rem;
   }
   .heroSection .container .banner .imageBox img {
     width: 250px;
@@ -248,11 +262,15 @@ nav svg {
   .heroSection .container .banner:last-child .imageBox {
     height: 350px;
   }
-  .heroSection .container .banner:last-child .imageBox img {
-    display: none;
+  .heroSection .container .banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: fit-content;
   }
   .heroSection .container .banner .combined_boxes {
-    flex-direction: column-reverse;
+    font-size: 2rem;
+    min-width: fit-content;
   }
   .heroSection .container .banner .textAndLogo {
     width: 100%;
@@ -262,11 +280,14 @@ nav svg {
   .heroSection .container .banner .textAndLogo .logo {
     margin-right: 60px;
   }
-  .heroSection .container .banner:last-child .dishes_title {
+  /* .heroSection .container .banner:last-child .dishes_title {
     margin-top: 65px;
+  } */
+  .heroSection .container .banner .imageBox {
+    width: 100vh;
   }
   .heroSection .container .banner .imageBox img {
-    width: 100%;
+    width: fit-content;
   }
 }
 @media (max-width: 720px) {
@@ -284,9 +305,9 @@ nav svg {
   .heroSection .container .banner:first-child {
     width: 100%;
   }
-  .heroSection .container .banner:last-child {
+  /* .heroSection .container .banner:last-child {
     display: none;
-  }
+  } */
   .heroSection .container .banner .title {
     text-align: center;
   }
@@ -310,8 +331,8 @@ nav svg {
     height: 350px;
   }
 }
-@media(max-width: 650px){
-  .heroSection{
+@media (max-width: 650px) {
+  .heroSection {
     padding: 0;
   }
 }
@@ -321,10 +342,7 @@ nav svg {
     height: auto;
   }
 }
-/**********************************************************************************************************************/
-
 /******************* ABOUT US COMPONENT STYLING **************/
-/**********************************************************************************************************************/
 .about {
   display: flex;
   min-height: 100vh;
@@ -432,10 +450,8 @@ nav svg {
     width: 100%;
   }
 }
-/**********************************************************************************************************************/
 
 /* QUALITIES COMPONENT STYLING */
-/*********************************************************************************************************************/
 .qualities {
   display: flex;
   height: fit-content;
@@ -504,10 +520,7 @@ nav svg {
     width: 100%;
   }
 }
-/*********************************************************************************************************************/
-
 /* MENU COMPONENT STYLING */
-/*********************************************************************************************************************/
 .menu {
   display: flex;
   min-height: 100vh;
@@ -600,10 +613,7 @@ nav svg {
     padding: 20px 0;
   }
 }
-/*********************************************************************************************************************/
-
 /* TEAM COMPONENT STYLING */
-/*********************************************************************************************************************/
 .team {
   display: flex;
   min-height: 60vh;
@@ -684,10 +694,7 @@ nav svg {
     width: 150px;
   }
 }
-/*********************************************************************************************************************/
-
 /* WHOAREWE COMPONENT STYLING */
-/*********************************************************************************************************************/
 .who_are_we {
   display: flex;
   justify-content: center;
@@ -771,10 +778,7 @@ nav svg {
     margin-bottom: 1.2rem;
   }
 }
-/*********************************************************************************************************************/
-
 /******************* NOT FOUND PAGE STYLING **************/
-/**********************************************************************************************************************/
 footer {
   background: #f9fbf2;
   display: flex;
@@ -847,10 +851,7 @@ footer .container .banner .right {
     gap: 7px;
   }
 }
-/**********************************************************************************************************************/
-
 /******************* RESERVATION COMPONENT STYLING **************/
-/**********************************************************************************************************************/
 .reservation {
   display: flex;
   min-height: 75vh;
@@ -894,12 +895,7 @@ footer .container .banner .right {
   border-bottom: 1px solid #333;
   background: transparent;
 }
-.reservation
-  .container
-  .banner
-  .reservation_form_box
-  form
-  input[type="email"] {
+.reservation .container .banner .reservation_form_box form input[type="email"] {
   width: 100%;
   margin-bottom: 20px;
   padding: 5px;
@@ -1038,10 +1034,7 @@ footer .container .banner .right {
     font-size: 1.6rem;
   }
 }
-/**********************************************************************************************************************/
-
 /******************* NOT FOUND PAGE STYLING **************/
-/**********************************************************************************************************************/
 .notFound {
   display: flex;
   min-height: 100vh;
@@ -1111,4 +1104,3 @@ footer .container .banner .right {
     font-size: 1.75rem;
   }
 }
-/**********************************************************************************************************************/
