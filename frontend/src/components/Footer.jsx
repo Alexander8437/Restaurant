@@ -16,7 +16,7 @@ const Footer = () => {
             <p>Developed By ALEXANDER</p>
           </div>
           <div className="right">
-            <p>All Rights Reserved By MysSelf.</p>
+            <p>All Rights Reserved By Shelly.</p>
           </div>
         </div>
       </div>

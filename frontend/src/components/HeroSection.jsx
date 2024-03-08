@@ -20,12 +20,6 @@ const HeroSection = () => {
             <h1 className="title dishes_title">Dishes</h1>
           </div>
         </div>
-        {/* <div className="banner">
-          <div className="imageBox">
-            <img src="hero2.png" alt="hero" />
-          </div>
-          <h1 className="title dishes_title">Dishes</h1>
-        </div> */}
       </div>
     </section>
   );
